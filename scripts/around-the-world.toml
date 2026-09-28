@@ -1,0 +1,17 @@
+# Full version: title intro, every leg with a stop (short one at connections),
+# outro over the North Pole with trip stats.
+include = ["trip.toml"]
+
+[timing]
+intro = true
+intro_duration = 5.5
+outro = true
+outro_duration = 11.5
+start_hold = 1.4
+hold = 2.0
+transfer_hold = 0.7
+final_hold = 1.2
+fly_through_transfers = false
+flight_speed = 1.0
+fade_in = 0.6
+fade_out = 1.0

@@ -1,0 +1,13 @@
+# Leaps only: no intro and no outro, connections are flown through without
+# stopping, 2 s pause at each destination.
+include = ["trip.toml"]
+
+[timing]
+intro = false
+outro = false
+start_hold = 2.0
+hold = 2.0
+final_hold = 2.0
+fly_through_transfers = true
+fade_in = 0
+fade_out = 0

@@ -1,0 +1,60 @@
+# The trip: stops and legs, shared by the scripts that `include` this file.
+
+title = "Around the world"
+subtitle = "Nov 14 - Dec 15, 2026"
+
+# Stops: code = { name, country, lat, lon, label side ("left" or "right") }
+[stops]
+PRG = { name = "Prague", country = "Czechia", lat = 50.0755, lon = 14.4378, label = "right" }
+FRA = { name = "Frankfurt", country = "Germany", lat = 50.1109, lon = 8.6821, label = "left" }
+SEL = { name = "Seoul", country = "South Korea", lat = 37.5665, lon = 126.978, label = "left" }
+TYO = { name = "Tokyo", country = "Japan", lat = 35.6762, lon = 139.6503, label = "right" }
+OSA = { name = "Osaka", country = "Japan", lat = 34.6937, lon = 135.5023, label = "right" }
+SFO = { name = "San Francisco", country = "United States", lat = 37.7749, lon = -122.4194, label = "left" }
+LAS = { name = "Las Vegas", country = "United States", lat = 36.1699, lon = -115.1398, label = "right" }
+NYC = { name = "New York City", country = "United States", lat = 40.7128, lon = -74.006, label = "right" }
+LON = { name = "London", country = "United Kingdom", lat = 51.5072, lon = -0.1276, label = "left" }
+
+# Legs in order. `transfer = true` marks the destination as a connection only.
+# `date` is shown in the HUD, leave it out when unknown.
+[[legs]]
+from = "PRG"
+to = "FRA"
+date = "Nov 14"
+transfer = true
+
+[[legs]]
+from = "FRA"
+to = "SEL"
+date = "Nov 14"
+
+[[legs]]
+from = "SEL"
+to = "TYO"
+
+[[legs]]
+from = "TYO"
+to = "SFO"
+date = "Nov 24"
+transfer = true
+
+[[legs]]
+from = "SFO"
+to = "LAS"
+date = "Nov 24"
+
+[[legs]]
+from = "LAS"
+to = "NYC"
+date = "Dec 4"
+
+[[legs]]
+from = "NYC"
+to = "LON"
+date = "Dec 14"
+transfer = true
+
+[[legs]]
+from = "LON"
+to = "PRG"
+date = "Dec 15"

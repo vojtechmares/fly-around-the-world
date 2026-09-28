@@ -1,0 +1,13 @@
+[project]
+name = "fly-around-the-world"
+version = "0.1.0"
+description = "3D globe fly-around animation of a trip, rendered to MP4"
+authors = [
+    { name = "Vojtěch Mareš", email = "vojtech@mares.cz" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.5.3",
+    "pillow>=12.3.0",
+    "wgpu>=0.32.0",
+]
